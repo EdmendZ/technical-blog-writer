@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(~/.claude/skills/technical-blog-writer/**)",
+      "Bash(python -m json.tool /c/Users/edmen/.claude/skills/technical-blog-writer/evals/evals.json)",
+      "Bash(python -m json.tool /e/VScodeProjects/documentskill/skills/technical-blog-writer/evals/evals.json)",
+      "Bash(git -C /e/VScodeProjects/documentskill status --short)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(command -v piclist)",
+      "Bash(command -v picgo)",
+      "Bash(command -v PicList)",
+      "Bash(command -v piclist-cli)"
+    ]
+  }
+}

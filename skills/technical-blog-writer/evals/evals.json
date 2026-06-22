@@ -1,0 +1,57 @@
+{
+  "skill_name": "technical-blog-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我根据这些关键词写一篇 Markdown 技术博客：MySQL、MVCC、undo log、Read View、版本链、可重复读。读者是初学者，我想讲清楚原理，最好有图解和总结。",
+      "expected_output": "一篇面向初学者的中文 Markdown 技术博客，能讲清楚 MySQL MVCC 的核心原理，包含核心概念、版本链/Read View 等有用图解、清晰大纲和总结。",
+      "files": [],
+      "expectations": [
+        "The output is a Chinese Markdown technical article with a clear title and heading hierarchy.",
+        "The article explains MVCC, undo log, Read View, version chain, and repeatable read in a beginner-friendly way.",
+        "The article includes or plans at least one useful diagram related to MVCC, such as a version chain or Read View visibility flow.",
+        "The article explains the principle instead of only listing interview-style definitions.",
+        "The article ends with a useful summary for later review."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "我有一份 Redis 缓存穿透、缓存击穿、缓存雪崩的零散笔记，帮我整理成博客 Markdown，适合我复习和面试。要讲清楚每种问题的原因、解决方案和区别，必要时画图。假设我的笔记要点是：穿透是查不存在的数据；击穿是热点 key 失效；雪崩是大量 key 同时失效；解决方案包括布隆过滤器、缓存空值、互斥锁、逻辑过期、随机过期时间。",
+      "expected_output": "一篇中文 Markdown 技术博客，将用户零散笔记整理为结构清晰的文章，讲清缓存穿透/击穿/雪崩的区别、原因、解决方案、适用场景、图解和总结。",
+      "files": [],
+      "expectations": [
+        "The output prioritizes and incorporates the user-provided notes.",
+        "The article clearly distinguishes cache penetration, cache breakdown, and cache avalanche.",
+        "The article compares solutions including Bloom filter, cache null values, mutex lock, logical expiration, and randomized expiration.",
+        "The article includes or plans useful diagrams for failure flows or solution flows.",
+        "The article includes a summary or comparison table useful for review and interview preparation."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "帮我写一篇 JWT 和 Session 的对比型技术文档，输出 Markdown。目标是让初学者理解认证状态到底放在哪里、请求链路有什么不同、各自适合什么场景。需要图解，不要只写优缺点列表。",
+      "expected_output": "一篇面向初学者的中文 Markdown 对比文章，通过认证状态位置、请求链路、适用场景和图解讲清 JWT 与 Session 的差异。",
+      "files": [],
+      "expectations": [
+        "The output is structured as an adaptive comparison article rather than a rigid generic template.",
+        "The article explains where authentication state is stored for JWT and Session.",
+        "The article explains request flows for both approaches and includes or plans a diagram for the flows.",
+        "The article provides scenario-based recommendations instead of only listing pros and cons.",
+        "The article is suitable for beginners and ends with a clear summary."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "我想写一篇 Spring Bean 生命周期的学习文档，主要为了自己加深理解和面试复习。请输出 Markdown，先建立直觉，再讲核心流程，必要时画生命周期图。",
+      "expected_output": "一篇中文 Markdown 学习文档，面向自学和面试复习，先建立 Spring Bean 生命周期的直觉，再讲核心流程、关键扩展点、图解和总结。",
+      "files": [],
+      "expectations": [
+        "The output builds intuition before detailed lifecycle steps.",
+        "The article explains the core Spring Bean lifecycle flow in a coherent order.",
+        "The article includes or plans a useful lifecycle diagram.",
+        "The article supports interview review without becoming only a Q&A list.",
+        "The article has a useful final summary."
+      ]
+    }
+  ]
+}
